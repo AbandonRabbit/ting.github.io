@@ -1,4 +1,4 @@
-# baseURL: "https://sonnycalcr.github.io/" # 主站的 URL
+baseURL: "https://ting.github.io/" # 主站的 URL
 title: Clsout's Blog # 站点标题
 copyright: "[©2024 SonnyCalcr's Blog](https://clsout.github.io/)" # 网站的版权声明，通常显示在页脚
 theme: PaperMod # 主题
