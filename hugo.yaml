@@ -1,6 +1,6 @@
 baseURL: "https://ting.github.io/" # 主站的 URL
-title: Clsout's Blog # 站点标题
-copyright: "[©2024 SonnyCalcr's Blog](https://clsout.github.io/)" # 网站的版权声明，通常显示在页脚
+title: Ting's Blog # 站点标题
+# copyright: "[©2024 SonnyCalcr's Blog](https://ting.github.io/)" # 网站的版权声明，通常显示在页脚
 theme: PaperMod # 主题
 languageCode: zh-cn # 语言
 
@@ -52,7 +52,7 @@ paginate: 8 # 每页展示的文章数量，可能是主题自己设置的
 params:
   env: production # 启用 Google Analytics、OpenGraph、Twitter Cards 和 Schema
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Clsout
+  author: Ting
   defaultTheme: "dark" # 默认是暗色背景
   ShowShareButtons: false # 关闭分享按钮
   ShowReadingTime: true # 展示预估的阅读时长

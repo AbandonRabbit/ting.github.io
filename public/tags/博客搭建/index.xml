@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>博客搭建 on Clsout&#39;s Blog</title>
-    <link>//localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
-    <description>Recent content in 博客搭建 on Clsout&#39;s Blog</description>
+    <title>博客搭建 on Ting&#39;s Blog</title>
+    <link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <description>Recent content in 博客搭建 on Ting&#39;s Blog</description>
     <image>
-      <title>Clsout&#39;s Blog</title>
+      <title>Ting&#39;s Blog</title>
       <url>https://i.postimg.cc/7hwByTVS/calcr.png</url>
       <link>https://i.postimg.cc/7hwByTVS/calcr.png</link>
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
-    <copyright>©2024 SonnyCalcr&amp;rsquo;s Blog</copyright>
     <lastBuildDate>Sun, 22 Sep 2024 01:53:10 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>//localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Sun, 22 Sep 2024 01:53:10 +0800</pubDate>
-      <guid>//localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>&lt;p&gt;这是第一篇文章&lt;/p&gt;
 &lt;p&gt;行内数学公式：$ a^2 + b^2 = c^2 $。&lt;/p&gt;
 &lt;p&gt;块公式，&lt;/p&gt;
