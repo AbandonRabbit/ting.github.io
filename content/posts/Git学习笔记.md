@@ -15,7 +15,7 @@ tags = ["技术文档","学习笔记","Git"]
 2. golbal：全局配置，所有仓库生效
 3. system：系统配置，对所有用户生效
 
-~~~git
+~~~c
 //配置用户名
 git config --global user.name "name"
 //配置邮箱
@@ -28,7 +28,7 @@ git config --global --list
 
 有两种方式，一种在本地创建仓库，一种从网上克隆仓库
 
-~~~git
+~~~c
 //在本地创建仓库
 //1、新建目录
 mkdir learn-git
@@ -53,7 +53,7 @@ git init
 
 ## 添加和提交文件
 
-~~~Git
+~~~c
 //新建仓库
 git init
 //查看仓库状态
@@ -74,7 +74,7 @@ git commit -m "提交参数信息"
 
 ## 查看差异——git diff
 
-~~~Git
+~~~c
 //比较工作区和暂存区的差异
 git diff
 //比较工作区和仓库的差异
@@ -94,7 +94,7 @@ git diff HEAS~3 HEAD filename  //只查看这个文件的差异
 
 ## 删除文件
 
-~~~Git
+~~~c
 //直接删除
 //使用这种删除只是删除工作区，暂存区中还没有删除，需要接着提交到暂存区然后提交到仓库才算删除
 rm filename
@@ -114,7 +114,7 @@ git会忽略在.gitignore中列出的文件
 
 在这节课中用到的一些命令
 
-~~~Git
+~~~c
 //将工作区中的内容直接提交到仓库
 git commit -am "massage"
 //追加内容
@@ -135,7 +135,7 @@ git status -s
 
 ## SSH配置和克隆仓库
 
-~~~Git
+~~~c
 //生成SSH密钥
 ssh-keygen -t rsa -b 4096
 //克隆仓库
@@ -151,7 +151,7 @@ git push
 输入SSH文件名再回车
 添加config文件，并在文件中添加
 
-~~~Git
+~~~c
 Host github.com
 HostName github.com
 PreferredAuthentications publickey
@@ -160,7 +160,7 @@ IdentityFile ~/.ssh/name
 
 ## 关联本地仓库和远程仓库
 
-~~~Git
+~~~c
 //添加远程仓库
 git remoter add '仓库别名' '仓库地址'
 git push -u '远程仓库名' '分支名'
@@ -186,26 +186,26 @@ git fetch
 
 ### 新建分支
 
-~~~Git
+~~~c
 git branch 分支名
 ~~~
 
 ### 切换分支
 
-~~~Git
+~~~c
 git switch 分支名
 ~~~
 
 ### 合并分支
 
-~~~Git
+~~~c
 //将指定分支合并到当前所在分支
 git merge 分支名
 ~~~
 
 ### 删除分支
 
-~~~Git
+~~~c
 git branch -d 分支名
 //如果分支没有合并
 git branch -D 分支名

@@ -34,7 +34,7 @@ ls [-a -l -h] [Linux路径]
 
 ## cd - pwd命令
 
-~~~Linux
+~~~c
 无需选项，只有参数，表示切换到这个目录下
 直接执行，不写参数，表示回到用户的HOME目录
 cd [Linux路径]
@@ -50,7 +50,7 @@ pwd 打印当前所在的目录
 
 ## 创建目录命令 mkdir
 
-~~~Linux
+~~~c
 mkdir [-p] Linux路径
 ~~~
 
@@ -58,7 +58,7 @@ mkdir [-p] Linux路径
 
 ## 文件操作命令（touch、cat、more、mv、rm）
 
-~~~Linux
+~~~c
 //创建文件命令
 touch Linux路径
 
@@ -71,7 +71,7 @@ more Linux路径
 
 **复制文件夹命令**
 
-~~~Linux
+~~~c
  cp [-r] 参数1 参数2
 ~~~
 
@@ -81,7 +81,7 @@ more Linux路径
 
 **移动文件命令**
 
-~~~Linux
+~~~c
 mv 参数1  参数2
 ~~~
 
@@ -91,7 +91,7 @@ mv 参数1  参数2
 
 **删除文件命令**
 
-~~~Linux
+~~~c
 rm [-r -f] 参数1，参数2 ………… 参数n
 ~~~
 
@@ -104,14 +104,14 @@ rm [-r -f] 参数1，参数2 ………… 参数n
 
 ## 查找命令 which、find
 
-~~~Linux
+~~~c
 //查找一系列命令的程序文件存放在哪里
 which 要查找的命令
 ~~~
 
 **find命令——按文件名查找**
 
-~~~Linux
+~~~c
 find 起始路径 -name "被查找文件名"
 ~~~
 
@@ -119,7 +119,7 @@ find 起始路径 -name "被查找文件名"
 
 **find命令——按文件大小查找文件**
 
-~~~Linux
+~~~c
 find 起始路径 -size +|-n[kMG]
 
 //示例 查找小于10kb的文件
@@ -134,7 +134,7 @@ find / -size -10k
 
 **grep命令**
 
-~~~LInux
+~~~c
 //从文件中通过关键字过滤文件行
 greo [-n] 关键字 文件路径
 ~~~
@@ -145,7 +145,7 @@ greo [-n] 关键字 文件路径
 
 **wc命令**
 
-~~~Linux
+~~~c
 //统计文件的行数、单词数量等
 wc [-c -m -l -w] 文件路径
 ~~~
@@ -164,7 +164,7 @@ wc [-c -m -l -w] 文件路径
 
 **echo**
 
-~~~Linux
+~~~c
 echo 输出内容
 ~~~
 
@@ -179,7 +179,7 @@ echo 输出内容
 
 **tail命令**
 
-~~~Linux
+~~~c
 tail [-f -num] Linux路径
 ~~~
 
@@ -192,7 +192,7 @@ tail [-f -num] Linux路径
 
 ### su和exit命令
 
-~~~Linux
+~~~c
 //切换用户
 su [-] [用户名]
 // - 表示切换用户后加载环境变量
@@ -205,7 +205,7 @@ exit
 
 用来临时用root身份执行命令
 
-~~~Linux
+~~~c
 sudo 其他命令
 ~~~
 
@@ -214,7 +214,7 @@ sudo 其他命令
 
 配置步骤：
 
-~~~Linux
+~~~c
 1、切换到root用户，执行visudo命令，会自动通过vi编辑器打开/etc/sudoers
 
 2、在文件的最后添加
@@ -242,7 +242,7 @@ sudo 其他命令
 
 需要root用户执行
 
-~~~Linux
+~~~c
 //创建用户组
 groupadd 用户组名
 
@@ -254,7 +254,7 @@ groupdel 用户组名
 
 ### 创建用户
 
-~~~Linux
+~~~c
 useradd [-g -d] 用户名
 ~~~
 
@@ -263,7 +263,7 @@ useradd [-g -d] 用户名
 
 ### 删除用户
 
-~~~Linux
+~~~c
 userdel [-r] 用户名
 ~~~
 
@@ -271,7 +271,7 @@ userdel [-r] 用户名
 
 ### 查看用户所属组
 
-~~~Linux
+~~~c
 id [用户名]
 ~~~
 
@@ -279,13 +279,13 @@ id [用户名]
 
 ### 修改用户属组
 
-~~~Linux
+~~~c
 usermod -aG 用户组 用户名
 ~~~
 
 ## getent命令
 
-~~~Linux
+~~~c
 //查看当前系统之有哪些用户
 getent passwd
 
@@ -325,7 +325,7 @@ ls -l 返回的权限信息格式：
 
 只有文件、文件夹的所属用户和root用户可以修改
 
-~~~Linux
+~~~c
 chmod [-R] 权限 文件或文件夹
 
 //示例，u表示所属用户，g表示所属用户组，o表示其他用户
@@ -343,7 +343,7 @@ chmod 751 test.txt
 
 > 普通用户无法修改所属为其他用户或组，所以此命令只适用于root用户执行
 
-~~~Linux
+~~~c
 chown [-R] [用户][:][用户组] 问价或文件夹
 ~~~
 
@@ -374,7 +374,7 @@ chown [-R] [用户][:][用户组] 问价或文件夹
 
 > 该命令需要root权限，并联网
 
-~~~Linux
+~~~c
 yum [-y] [install | remove | search] 软件名称
 ~~~
 
@@ -387,7 +387,7 @@ yum [-y] [install | remove | search] 软件名称
 
 > 使用的是apt包管理器，同样需要root权限并联网
 
-~~~Linux
+~~~c
 apt [-y] [install | remove | search] 软件名称
 ~~~
 
@@ -402,7 +402,7 @@ apt [-y] [install | remove | search] 软件名称
 
 只有软件集成到这个systemctl中才能使用这个命令
 
-~~~Linux
+~~~c
 systemctl start | stop | tatus | enable | disable 服务名
 ~~~
 
@@ -416,7 +416,7 @@ systemctl start | stop | tatus | enable | disable 服务名
 
 将文件或文件夹链接到其他位置，类似快捷方式
 
-~~~Linux
+~~~c
 ln -s 参数1~参数2
 ~~~
 
@@ -426,7 +426,7 @@ ln -s 参数1~参数2
 
 # 日期和时区
 
-~~~Linux
+~~~c
 date [-d] [+格式化字符串]
 
 //显示年月日，如果有空格使用双引号包裹
@@ -460,7 +460,7 @@ day -d "-1 day" +%Y-%M-%d
 
 ## 修改Linux时区
 
-~~~Linux
+~~~c
 //删除时区文件
 rm -f /etc/localtime
 //创建软连接
@@ -477,7 +477,7 @@ sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ### 手动校准
 
-~~~Linux
+~~~c
 ntpdate -u ntp服务器地址
 ~~~
 
@@ -489,20 +489,20 @@ ntpdate -u ntp服务器地址
 
 ### 查看主机名
 
-~~~Linux
+~~~c
 hostname
 ~~~
 
 ### 修改主机名
 
-~~~Linux
+~~~c
 //重新登陆就可以看到主机名已经更改
 hostnamectl set-hostname newnname
 ~~~
 
 ## 配置固定IP地址
 
-~~~Linux
+~~~c
 1、打开文件
 vim /etc/sysconfig/network-scripts/ifcfg-ens33
 
@@ -524,7 +524,7 @@ systemctl restart network
 
 检查网络是否可联通状态
 
-~~~Linux
+~~~c
 ping [-c num] ip或主机名
 ~~~
 
@@ -534,7 +534,7 @@ ping [-c num] ip或主机名
 
 非交互式的文件下载器，可以在命令行内下载网络文件
 
-~~~Linux
+~~~c
 wget [-b] url
 ~~~
 
@@ -544,7 +544,7 @@ wget [-b] url
 
 发送http网络请求，可用于：下载文件、获取信息等
 
-~~~Linux
+~~~c
 curl [-O] url
 ~~~
 
@@ -566,7 +566,7 @@ Linux系统可以支持 65535 个端口，这些端口分为 3 类
 
 **查看指定ip地址的端口占用情况**
 
-~~~Linux
+~~~c
 //需要先安装 nmap
 nmap 被查看的ip地址
 ~~~
@@ -575,7 +575,7 @@ nmap 被查看的ip地址
 
 **查看本机指定端口占用情况**
 
-~~~Linux
+~~~c
 //需要安装 net-tools
 netstat -anp | grep 端口号
 ~~~
@@ -584,7 +584,7 @@ netstat -anp | grep 端口号
 
 ## 查看进程
 
-~~~Linux
+~~~c
 ps [-e -f]
 ~~~
 
@@ -607,7 +607,7 @@ ps [-e -f]
 
 ## 关闭进程
 
-~~~Linux
+~~~c
 kill [-9] 进程ID
 ~~~
 
@@ -676,7 +676,7 @@ kill [-9] 进程ID
 
 查看硬盘的使用情况
 
-~~~Linux
+~~~c
 df [-h]
 ~~~
 
@@ -686,7 +686,7 @@ df [-h]
 
 查看cpu、磁盘的相关信息
 
-~~~Linux
+~~~c
 iostat [-x][num1][num2]
 ~~~
 
@@ -705,7 +705,7 @@ iostat [-x][num1][num2]
 
 sar命令
 
-~~~Linux
+~~~c
 sar -n DEV num1 num2
 ~~~
 
@@ -720,7 +720,7 @@ sar -n DEV num1 num2
 
 env命令
 
-~~~Linux
+~~~c
 env
 ~~~
 
@@ -734,7 +734,7 @@ env
 
 临时设置：
 
-~~~Linux
+~~~c
  export 变量名 = 变量值
 ~~~
 
@@ -746,7 +746,7 @@ env
 
 环境变量配置过程
 
-~~~Linux
+~~~c
 //配置环境变量针对当前用户生效
 vi ~/bashrc
 
@@ -759,7 +759,7 @@ source .bashrc
 
 ## 自定义环境变量PATH
 
-~~~Linux
+~~~c
 //在配置文件中添加
 export PATH=$PATH:/程序目录
 
@@ -790,7 +790,7 @@ rz、sz命令
 > - .tar：称为tarball，归档文件，简单的将文件组装到一个.tar的文件内，没有太多文件体积的减少，只是简单的封装
 > - .gz：常见为.tar.gz、gzip格式压缩，使用gzip压缩算法将文件压缩到一个文件内，可以极大的减少压缩后的体积
 
-~~~Linux
+~~~c
 tar [-c -v -x -f -z -C] 参数1 参数2 …… 参数n
 ~~~
 
@@ -811,7 +811,7 @@ tar [-c -v -x -f -z -C] 参数1 参数2 …… 参数n
 
 ### 常用的 tar 解压组合
 
-~~~Linux
+~~~c
 //解压test.tar，将文件解压到当前目录
 tar -xvf test.tar
 
@@ -828,7 +828,7 @@ tar -zxvf test.tar.gz -C /home/admin
 
 ### 压缩文件 zip
 
-~~~Linux
+~~~c
 zip [-r] 参数1，参数2 …… 参数n
 ~~~
 
@@ -838,7 +838,7 @@ zip [-r] 参数1，参数2 …… 参数n
 
 ### 解压文件 unzip
 
-~~~Linux
+~~~c
 unzip [-d] 参数1
 ~~~
 
@@ -855,7 +855,7 @@ unzip [-d] 参数1
 
 1. 配置yum仓库
 
-   ~~~Linux
+   ~~~c
    //更新密钥
    rpm --import https://repo.mysql.com/RPM-GPG-KEY-MYSQL-2022
    
@@ -865,13 +865,13 @@ unzip [-d] 参数1
 
 2. 安装MySQL
 
-   ~~~Linux
+   ~~~c
    yum install -y mysql -community-server
    ~~~
 
 3. 设置开机启动
 
-   ~~~Linux
+   ~~~c
    systemctl start mysqld
    systemctl enable mysqld
    ~~~
@@ -882,7 +882,7 @@ unzip [-d] 参数1
 
 1. 获取MySQL的初始密码
 
-   ~~~Linux
+   ~~~c
    # 过滤 /var/log/mysqld.log 文件中的temporary password关键字，该文件是mysql安装运行过程中的日志文件
    cat /var/log/mysqld.log | grep "temporary password"
    
@@ -890,7 +890,7 @@ unzip [-d] 参数1
 
 2. 登录MySQL数据库系统
 
-   ~~~Linux
+   ~~~c
    执行
    mysql -uroot -p
    
@@ -899,7 +899,7 @@ unzip [-d] 参数1
 
 3. 修改 root 用户密码
 
-   ~~~Linux
+   ~~~c
    ALTER USER 'root'@'localhost' IDENTIFIED BY '密码';
    ~~~
 
@@ -909,19 +909,19 @@ unzip [-d] 参数1
 
 4. 配置 EPEL 仓库
 
-   ~~~Linux
+   ~~~c
    yum install -y epel-release
    ~~~
 
 5. 安装redis
 
-   ~~~Linux
+   ~~~c
    yum install -y redis
    ~~~
 
 6. 设置 redis 服务
 
-   ~~~Linux
+   ~~~c
    //开机自启动
    systemctl enable redis
    //关闭开机自启动
@@ -936,7 +936,7 @@ unzip [-d] 参数1
 
 7. 放行防火墙
 
-   ~~~Linux
+   ~~~c
    //方式一，关闭防火墙
    systemctl stop firewalld
    systemctl disable firewalld

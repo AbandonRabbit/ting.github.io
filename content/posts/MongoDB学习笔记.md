@@ -33,7 +33,7 @@ MongoDB 不需要事先创建好数据库和集合然后再插入数据，也不
 
 limit() —— 返回n条数据
 
-~~~MongoDB
+~~~c
 db.集合名.find().limit(n)
 ~~~
 
@@ -41,7 +41,7 @@ db.集合名.find().limit(n)
 
 sort() —— 排序 
 
-~~~
+~~~c
 -- 1表示按升序排序，-1表示降序
 db.集合名.find().sort({level:1}) 
 
@@ -51,7 +51,7 @@ db.集合名.find().sort({level: 1, name: -1})
 
 skip() —— 跳过一些查询数据
 
-~~~
+~~~c
 返回第二名开始的数据
 db.集合名.find().sort({level:1}).limit(2).skip(1)
 
@@ -60,7 +60,7 @@ db.集合名.find().sort({level:1}).limit(2).skip(1)
 
 find({field:value}) —— 条件查询
 
-~~~
+~~~c
 db.集合名.find({level:3})  --查询等级为3的用户
 
 db.集合名.find({level:3},{name:1,email:1})  --只返回name和email字段
@@ -99,7 +99,7 @@ updateMany() —— 更新多条数据
 
 *如果字段不存在，会创建这个字段，并把值写入这个字段*
 
-~~~
+~~~c
 把等级为1 的用户的钱更新为100
 db.集合名.updataOne({level:1},{$set:{money:100}})
 ~~~
@@ -108,7 +108,7 @@ deleteOne() —— 删除一条数据
 
 deleteMany() —— 删除满足条件的多条数据
 
-~~~
+~~~c
 删除等级为1的用户
 db.集合名.deleteOne({level:1})
 ~~~

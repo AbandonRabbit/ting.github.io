@@ -78,7 +78,7 @@ tags = ["技术文档","学习笔记","Redis"]
 
 2. 查看
 
-   ```Redis
+   ```c
    ZRANGE key start end [WITHSCORES]
    WITHSCORES：同时输出分数
    
@@ -277,7 +277,7 @@ tags = ["技术文档","学习笔记","Redis"]
 
 **配置步骤：**
 
-~~~redis
+~~~c
 1、添加配置文件
 vi sentinel.conf
 	添加配置信息   1 表示需要一个哨兵节点同意

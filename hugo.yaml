@@ -82,6 +82,9 @@ params:
     - name: "Bilibili"
       title: "关注我的 B 站帐号"
       url: "https://space.bilibili.com/448579139"
+    - name: "CSDN"
+      title: "CSDN"
+      url: "https://blog.csdn.net/qq_45751007"
 
   fuseOpts: # 搜索
     isCaseSensitive: false
@@ -132,5 +135,5 @@ markup:
     anchorLineNos: false  # 不要给行号设置锚标
     codeFences: true      # 启用代码围栏
     noClasses: false      # 暂时不需要理解，不影响展示
-    lineNos: true         # 代码行号
+    lineNos: false         # 代码行号
     lineNumbersInTable: false  # 如果设置成 true，文章开头是代码的话，摘要会显示代码行号
