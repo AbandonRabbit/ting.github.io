@@ -131,13 +131,13 @@ code.has-jax {
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="首页">
-                    <span>首页</span>
+                <a href="http://localhost:1313/" title="主页">
+                    <span>主页</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="归档">
-                    <span>归档</span>
+                <a href="http://localhost:1313/archives/" title="时间轴">
+                    <span>时间轴</span>
                 </a>
             </li>
             <li>
@@ -180,25 +180,132 @@ code.has-jax {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">My First Post
+    <h2 class="entry-hint-parent">MySQL学习笔记
     </h2>
   </header>
   <div class="entry-content">
-    <p>这是第一篇文章
-行内数学公式：$ a^2 &#43; b^2 = c^2 $。
-块公式，
-$$ a^2 &#43; b^2 = c^2 $$
-$$ \boldsymbol{x}_{i&#43;1}&#43;\boldsymbol{x}_{i&#43;2}=\boldsymbol{x}_{i&#43;3} $$ 1.post-content pre, 2code { 3 font-family: &#34;Roboto&#34;, monospace; 4 font-size: 1rem; 5 line-height: 1.2; 6} 字符串String 设置
+    <p>事务四大特性 事务具有四大特性，被称为ACID：
+原子性（Atomicity）：事务是不可分割的最小操作单元，要么全部成功，要么全部失败 一致性（Consistency）：事务完成时，必须使所有的数据都保持一致状态 隔离性（Isolation）：数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行 持久性（Durability）：事务一旦提交或滚回，它对数据库的改变就是永久的 并发事务问题 并发事务常常出现三种问题：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:32:10 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;18 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to MySQL学习笔记" href="http://localhost:1313/posts/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Redis学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>字符串String 设置
 SET key value
 获取 GET key
 删除 DEL key
 判断是否存在 EXISTS key
 查看有哪些键 KEYS [pattern模式匹配]
+删除所有键 FLUSHALL
+查看过期时间 TTL key
+设置过期时间 EXPIRE key time/秒
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-22 01:53:10 +0800 CST'>2024-09-22</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;Ting</footer>
-  <a class="entry-link" aria-label="post link to My First Post" href="http://localhost:1313/posts/my-first-post/"></a>
+  <footer class="entry-footer"><span title='2024-10-02 16:26:31 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to Redis学习笔记" href="http://localhost:1313/posts/redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MongoDB学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>概念 非关系型数据库，文档型数据库
+文档类似于mysql中的行
+数据库由一个个集合组成，集合对应mysql中的表，每个集合包含多个文档，每个文档对应mysql中的一行，文档使用json的数据格式来组织和存储数据，不同的文档中间不需要有相同的结构和字段
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:26:17 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to MongoDB学习笔记" href="http://localhost:1313/posts/mongodb%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Linux学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Linux 基本命令 根目录从 / 开始，后面的表示层级关系
+命令通用格式
+1command [-options] [parameter] command ：命令本身 -options ：可选，命令的一些选项，可以通过选项控制命令的行为细节 parameter ：可选，命令的参数，多用于命令的指向目标 ls命令 1ls [-a -l -h] [Linux路径] -a ： 显示所有文件，包括隐藏文件，在文件名前面会有一个 . 来表示这是一个隐藏文件 -l ： 用列表显示文件可以显示更详细的内容 -h： 不可以单独使用通常和 -l 一起使用，显示文件大小 这些命令可以组合在一起使用
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:26:10 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;13 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to Linux学习笔记" href="http://localhost:1313/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Kafka学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>基础 broker： 理论上一个一台机器就是一个 broker，也可以是一台机器上有多个 broker 进程，不过要使用不同的端口号区分
+**Topic：**一个broker内部有多个 topic ，存储某一类的业务数据
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:26:02 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to Kafka学习笔记" href="http://localhost:1313/posts/kafka%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GRPC学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>简介 RPC的全称是Remote Procedure Call，远程过程调用。这是一种协议，是用来屏蔽分布式计算中的各种调用细节，使得你可以像是本地调用一样直接调用一个远程的函数。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:25:53 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;6 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to GRPC学习笔记" href="http://localhost:1313/posts/grpc%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GoLang学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>序言 内存管理主要包含两个动作：分配和释放。逃逸分析就是服务于内存分配的，而内存的释放有GC负责
+逃逸分析 基本数据类型一般来说分配在栈区，编译器存在一个逃逸分析
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:25:43 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;11 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to GoLang学习笔记" href="http://localhost:1313/posts/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Go Zero学习笔记
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>安装 安装goctl
+go install github.com/zeromicro/go-zero/tools/goctl@latest 使用 goctl测试安装是否成功
+安装组件
+goctl env check --install --verbose --force
+go-zero微服务框架下的代码生成工具。使用goctl可显著提升开发效率，让开发人员将时间重点放在业务开发上，其功能有
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 16:25:32 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Ting</footer>
+  <a class="entry-link" aria-label="post link to Go Zero学习笔记" href="http://localhost:1313/posts/go-zero%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/posts/page/2/">下一页&nbsp;2/2&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">

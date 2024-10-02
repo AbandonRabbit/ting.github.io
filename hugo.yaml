@@ -25,22 +25,22 @@ languages:
     # https://gohugo.io/content-management/menus/#define-in-site-configuration
     menus: # 菜单
       main:
-        - name: 首页
+        - name:  主页
           pageRef: /
           weight: 1 # 控制在页面上展示的前后顺序
-        - name: 归档
+        - name:  时间轴
           pageRef: archives/
           weight: 5
-        - name: 分类
+        - name:  分类
           pageRef: categories/
           weight: 6
-        - name: 标签
+        - name:  标签
           pageRef: tags/
           weight: 7
-        - name: 搜索
+        - name:  搜索
           pageRef: search/
           weight: 8
-        - name: 关于
+        - name:  关于
           pageRef: about/
           weight: 9
 
@@ -71,24 +71,17 @@ params:
 #首页的文章上方的信息
   homeInfoParams:
     Title: "Hey Guys \U0001F44B" # 首页的 profile 标题
-    Content: "fdsadfsfdsfds"
+    Content: "无可奈何花落去，似曾相识燕归来。</br></br>
+    大处着眼，小处着手，独居守心，群居守口。
+    "
 
   socialIcons: # 社交账号的按键配置
     - name: "github"
       title: "Follow my Github"
-      url: "https://github.com/sonnycalcr"
-    - name: "x"
-      title: "Follow my Twitter"
-      url: "https://x.com/sonnycalcr"
+      url: "https://github.com/AbandonRabbit"
     - name: "Bilibili"
       title: "关注我的 B 站帐号"
-      url: "https://space.bilibili.com/93138859559908"
-    - name: "Youtube"
-      title: "Follow my Youtube Channel"
-      url: "https://youtube.com/@sonnycalcr"
-    - name: "Telegram"
-      title: "Contact Me"
-      url: "https://t.me/sonnycalcr"
+      url: "https://space.bilibili.com/448579139"
 
   fuseOpts: # 搜索
     isCaseSensitive: false
