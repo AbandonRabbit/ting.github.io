@@ -6,6 +6,121 @@ tags = ["技术文档","学习笔记","go-zero"]
 
 +++
 
+# 开始
+
+## 目录结构
+
+~~~c
+Demo
+└─app	微服务文件
+    └─admin		其中一个微服务	
+        ├─cmd	
+        │  ├─api	api接口层	对外提供服务
+        │  │  │  admin.go	启动函数
+        │  │  │
+        │  │  ├─desc	定义接口的
+        │  │  │  │  main.api	定义路由
+        │  │  │  │  main.json
+        │  │  │  │
+        │  │  │  └─admin
+        │  │  │          admin.api	定义路由中的req和resp
+        │  │  │
+        │  │  ├─etc
+        │  │  │      admin.yaml		配置文件
+        │  │  │
+        │  │  └─internal	goctl生成的文件，重点关注
+        │  │      ├─config
+        │  │      │      config.go
+        │  │      │
+        │  │      ├─handler
+        │  │      │      createAdminHandler.go
+        │  │      │      deleteAdminHandler.go
+        │  │      │      getAdminsHandler.go
+        │  │      │      routes.go
+        │  │      │      updateAdminHandler.go
+        │  │      │
+        │  │      ├─logic
+        │  │      │      createAdminLogic.go
+        │  │      │      deleteAdminLogic.go
+        │  │      │      getAdminsLogic.go
+        │  │      │      updateAdminLogic.go
+        │  │      │
+        │  │      ├─svc
+        │  │      │      serviceContext.go
+        │  │      │
+        │  │      └─types
+        │  │              types.go
+        │  │
+        │  └─rpc	内部服务
+        │      │  main.go
+        │      │
+        │      ├─admin
+        │      │      admin.go
+        │      │
+        │      ├─etc
+        │      │      admin.yaml
+        │      │
+        │      ├─internal
+        │      │  ├─config
+        │      │  │      config.go
+        │      │  │
+        │      │  ├─logic
+        │      │  │      addAdminLogic.go
+        │      │  │      delAdminLogic.go
+        │      │  │      getAdminByIdLogic.go
+        │      │  │      searchAdminLogic.go
+        │      │  │      updateAdminLogic.go
+        │      │  │
+        │      │  ├─server
+        │      │  │      adminServer.go
+        │      │  │
+        │      │  └─svc
+        │      │          serviceContext.go
+        │      │
+        │      └─pb
+        │              admin.pb.go
+        │              admin.proto
+        │              admin_grpc.pb.go
+        │
+        └─model
+                adminModel.go
+                adminModel_gen.go
+                vars.go
+
+
+~~~
+
+
+
+## 开发流程
+
+1. 首先设计数据库和数据表
+2. 使用工具先生成model
+3. 先开发api层
+4. 再开发rpc层
+5. 在api层注册rpc服务，调用rpc方法，对外提供接口
+6. 生成接口文档
+
+## go-zero 的 API 语法规范
+
+~~~c
+
+type (	
+    // 定义对象
+    NameStruct {
+        字段名 类型 `json:"字段名"`
+    }
+)
+~~~
+
+字段类型：
+
+- 基础类型：`int`、`int32`、`int64`、`uint`、`uint32`、`uint64`、`float32`、 `float64`、`boll`、`string`、`bytes`
+- 结构体可以嵌套
+- 不支持 Map 但是可以自定义一个 key-value 的结构进行嵌套
+- 切片：`[]T` T 可以是任意基础类型或结构体
+-  时间类型使用 `string`
+
 # 安装
 
 1. 安装goctl
