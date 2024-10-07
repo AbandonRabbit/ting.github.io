@@ -113,3 +113,6 @@ deleteMany() —— 删除满足条件的多条数据
 db.集合名.deleteOne({level:1})
 ~~~
 
+
+
+[go语言操作mongodb最近学习在go中操作mongodb，了解到主要有第三方mgo和官方mongo-driver两个 - 掘金 (juejin.cn)](https://juejin.cn/post/6908063164726771719?searchId=2024100720300332EB02809B22F5F44864#heading-46)
