@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ting&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:8877/</link>
     <description>Recent content on Ting&#39;s Blog</description>
     <image>
       <title>Ting&#39;s Blog</title>
@@ -11,13 +11,43 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 02 Oct 2024 21:59:08 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Oct 2024 15:32:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:8877/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>goctl学习笔记</title>
+      <link>http://localhost:8877/posts/goctl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 06 Oct 2024 15:32:30 +0800</pubDate>
+      <guid>http://localhost:8877/posts/goctl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;p&gt;goctl 是 go-zero 的内置脚手架，是提升开发效率的一大利器，可以一键生成代码、文档、部署 k8s yaml、dockerfile 等。&lt;/p&gt;
+&lt;p&gt;官方文档：&lt;a href=&#34;https://link.juejin.cn/?target=https%3A%2F%2Fgo-zero.dev%2Fdocs%2Ftasks%2Finstallation%2Fgoctl%3F_highlight%3Dgoctl&#34;&gt;goctl 安装 | go-zero Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;goctl安装&#34;&gt;goctl安装&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install github.com/zeromicro/go-zero/tools/goctl@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;验证&#34;&gt;验证&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;goctl --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/af889cb1a43a4738b8be7dfcd14ad155~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=438&amp;amp;h=46&amp;amp;s=5585&amp;amp;e=png&amp;amp;b=2b2b2b&#34; alt=&#34;image-20240324183102287&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Context的用法</title>
+      <link>http://localhost:8877/posts/context%E7%9A%84%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 04 Oct 2024 13:46:10 +0800</pubDate>
+      <guid>http://localhost:8877/posts/context%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;context  在 1.7版本之后增加的&lt;/p&gt;
+&lt;h1 id=&#34;基本用法&#34;&gt;基本用法&lt;/h1&gt;
+&lt;h2 id=&#34;创建上下文&#34;&gt;创建上下文&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;context.Background()&lt;/code&gt;：返回一个空的上下文，通常在程序的主函数、初始化、测试中使用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context.TODO()&lt;/code&gt;：返回一个空的上下文，表示还没有明确的上下文要使用，通常用于暂时替代位置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;传递上下文&#34;&gt;传递上下文&lt;/h2&gt;
+&lt;p&gt;上下文对象通常作为函数的第一个参数进行传递。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTTP常用请求头</title>
-      <link>http://localhost:1313/posts/http%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E5%A4%B4/</link>
+      <link>http://localhost:8877/posts/http%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E5%A4%B4/</link>
       <pubDate>Wed, 02 Oct 2024 21:59:08 +0800</pubDate>
-      <guid>http://localhost:1313/posts/http%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E5%A4%B4/</guid>
+      <guid>http://localhost:8877/posts/http%E5%B8%B8%E7%94%A8%E8%AF%B7%E6%B1%82%E5%A4%B4/</guid>
       <description>&lt;h2 id=&#34;http常用请求头&#34;&gt;HTTP常用请求头&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Host&lt;/strong&gt;: 指定目标服务器的域名和端口。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;User-Agent&lt;/strong&gt;: 标识客户端信息（例如浏览器或应用程序）。&lt;/p&gt;
@@ -26,16 +56,16 @@
     </item>
     <item>
       <title>如何使用Go语言实现Hook效果</title>
-      <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8go%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hook%E6%95%88%E6%9E%9C/</link>
+      <link>http://localhost:8877/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8go%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hook%E6%95%88%E6%9E%9C/</link>
       <pubDate>Wed, 02 Oct 2024 21:56:16 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8go%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hook%E6%95%88%E6%9E%9C/</guid>
+      <guid>http://localhost:8877/posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8go%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hook%E6%95%88%E6%9E%9C/</guid>
       <description>&lt;p&gt;在 Go 语言中，&lt;strong&gt;Hook&lt;/strong&gt; 机制是一种在程序执行过程中插入自定义逻辑的技术，通常用于在特定事件或函数执行之前或之后触发某些动作。例如，日志系统、性能监控、调试工具等都可以通过 Hook 机制来实现。&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL学习笔记</title>
-      <link>http://localhost:1313/posts/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:32:10 +0800</pubDate>
-      <guid>http://localhost:1313/posts/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h3 id=&#34;事务四大特性&#34;&gt;事务四大特性&lt;/h3&gt;
 &lt;p&gt;事务具有四大特性，被称为ACID：&lt;/p&gt;
 &lt;ul&gt;
@@ -49,9 +79,9 @@
     </item>
     <item>
       <title>Redis学习笔记</title>
-      <link>http://localhost:1313/posts/redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:26:31 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;字符串string&#34;&gt;字符串String&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -88,9 +118,9 @@
     </item>
     <item>
       <title>MongoDB学习笔记</title>
-      <link>http://localhost:1313/posts/mongodb%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/mongodb%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:26:17 +0800</pubDate>
-      <guid>http://localhost:1313/posts/mongodb%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/mongodb%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;概念&#34;&gt;概念&lt;/h1&gt;
 &lt;p&gt;非关系型数据库，文档型数据库&lt;/p&gt;
 &lt;p&gt;文档类似于mysql中的行&lt;/p&gt;
@@ -98,9 +128,9 @@
     </item>
     <item>
       <title>Linux学习笔记</title>
-      <link>http://localhost:1313/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:26:10 +0800</pubDate>
-      <guid>http://localhost:1313/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;linux-基本命令&#34;&gt;Linux 基本命令&lt;/h1&gt;
 &lt;p&gt;根目录从  /  开始，后面的表示层级关系&lt;/p&gt;
 &lt;p&gt;命令通用格式&lt;/p&gt;
@@ -121,26 +151,26 @@
     </item>
     <item>
       <title>Kafka学习笔记</title>
-      <link>http://localhost:1313/posts/kafka%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/kafka%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:26:02 +0800</pubDate>
-      <guid>http://localhost:1313/posts/kafka%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/kafka%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;基础&#34;&gt;基础&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;broker：&lt;/strong&gt; 理论上一个一台机器就是一个 broker，也可以是一台机器上有多个 broker 进程，不过要使用不同的端口号区分&lt;/p&gt;
 &lt;p&gt;**Topic：**一个broker内部有多个 topic ，存储某一类的业务数据&lt;/p&gt;</description>
     </item>
     <item>
       <title>GRPC学习笔记</title>
-      <link>http://localhost:1313/posts/grpc%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/grpc%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:25:53 +0800</pubDate>
-      <guid>http://localhost:1313/posts/grpc%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/grpc%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;简介&#34;&gt;简介&lt;/h1&gt;
 &lt;p&gt;RPC的全称是Remote Procedure Call，远程过程调用。这是一种协议，是用来屏蔽分布式计算中的各种调用细节，使得你可以像是本地调用一样直接调用一个远程的函数。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GoLang学习笔记</title>
-      <link>http://localhost:1313/posts/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:25:43 +0800</pubDate>
-      <guid>http://localhost:1313/posts/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;序言&#34;&gt;序言&lt;/h1&gt;
 &lt;p&gt;内存管理主要包含两个动作：分配和释放。逃逸分析就是服务于内存分配的，而内存的释放有GC负责&lt;/p&gt;
 &lt;h2 id=&#34;逃逸分析&#34;&gt;逃逸分析&lt;/h2&gt;
@@ -149,26 +179,110 @@
     </item>
     <item>
       <title>Go Zero学习笔记</title>
-      <link>http://localhost:1313/posts/go-zero%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/go-zero%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:25:32 +0800</pubDate>
-      <guid>http://localhost:1313/posts/go-zero%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
+      <guid>http://localhost:8877/posts/go-zero%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;h1 id=&#34;开始&#34;&gt;开始&lt;/h1&gt;
+&lt;h2 id=&#34;目录结构&#34;&gt;目录结构&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Demo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;微服务文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;		&lt;span class=&#34;err&#34;&gt;其中一个微服务&lt;/span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cmd&lt;/span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;api&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;api接口层&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;对外提供服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;启动函数&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;desc&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;定义接口的&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;api&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;定义路由&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;          &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;api&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;定义路由中的&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;req和resp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;etc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;yaml&lt;/span&gt;		&lt;span class=&#34;err&#34;&gt;配置文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;internal&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;goctl生成的文件&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，重点关注&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;config&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;handler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;createAdminHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;deleteAdminHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;getAdminsHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;routes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;updateAdminHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;logic&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;createAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;deleteAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;getAdminsLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;updateAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;svc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;serviceContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;types&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;              &lt;span class=&#34;n&#34;&gt;types&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rpc&lt;/span&gt;	&lt;span class=&#34;err&#34;&gt;内部服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;etc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;yaml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;internal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;config&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;logic&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;addAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;delAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;getAdminByIdLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;searchAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;updateAdminLogic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;├─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;adminServer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;svc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;          &lt;span class=&#34;n&#34;&gt;serviceContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;      &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pb&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;              &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;              &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;proto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;              &lt;span class=&#34;n&#34;&gt;admin_grpc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;└─&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;model&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;adminModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;adminModel_gen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;vars&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;go&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;开发流程&#34;&gt;开发流程&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;安装goctl&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;go install github.com/zeromicro/go-zero/tools/goctl@latest&lt;/code&gt; 使用 &lt;code&gt;goctl&lt;/code&gt;测试安装是否成功&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;安装组件&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;goctl env check --install --verbose --force&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;go-zero微服务框架下的代码生成工具。使用goctl可显著提升开发效率，让开发人员将时间重点放在业务开发上，其功能有&lt;/p&gt;</description>
+&lt;li&gt;首先设计数据库和数据表&lt;/li&gt;
+&lt;li&gt;使用工具先生成model&lt;/li&gt;
+&lt;li&gt;先开发api层&lt;/li&gt;
+&lt;li&gt;再开发rpc层&lt;/li&gt;
+&lt;li&gt;在api层注册rpc服务，调用rpc方法，对外提供接口&lt;/li&gt;
+&lt;li&gt;生成接口文档&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;go-zero-的-api-语法规范&#34;&gt;go-zero 的 API 语法规范&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 定义对象
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;n&#34;&gt;NameStruct&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;err&#34;&gt;字段名&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;类型&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;字段名&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;字段类型：&lt;/p&gt;</description>
     </item>
     <item>
       <title>Git学习笔记</title>
-      <link>http://localhost:1313/posts/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:25:21 +0800</pubDate>
-      <guid>http://localhost:1313/posts/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;git学习笔记&#34;&gt;Git学习笔记&lt;/h1&gt;
 &lt;h2 id=&#34;配置和初始化&#34;&gt;配置和初始化&lt;/h2&gt;
 &lt;p&gt;参数：&lt;/p&gt;
@@ -188,9 +302,9 @@
     </item>
     <item>
       <title>ETCD学习笔记</title>
-      <link>http://localhost:1313/posts/etcd%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/etcd%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:25:13 +0800</pubDate>
-      <guid>http://localhost:1313/posts/etcd%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/etcd%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;p&gt;分布式key-value存储系统，用于配置共享和服务的注册和发现。&lt;/p&gt;
 &lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;go get go.etcd.io/etcd/client/v3 &lt;/code&gt;&lt;/p&gt;
@@ -234,9 +348,9 @@
     </item>
     <item>
       <title>RabbitMQ学习笔记</title>
-      <link>http://localhost:1313/posts/rabbitmq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/rabbitmq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:24:58 +0800</pubDate>
-      <guid>http://localhost:1313/posts/rabbitmq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/rabbitmq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;六种工作模式&#34;&gt;六种工作模式&lt;/h1&gt;
 &lt;h2 id=&#34;simple简单模式&#34;&gt;simple简单模式&lt;/h2&gt;
 &lt;p&gt;消费者拿走一个mq删除一个，无法保证消费者正确处理数据&lt;/p&gt;
@@ -249,9 +363,9 @@
     </item>
     <item>
       <title>Docker学习笔记</title>
-      <link>http://localhost:1313/posts/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:8877/posts/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2024 16:21:08 +0800</pubDate>
-      <guid>http://localhost:1313/posts/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:8877/posts/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;p&gt;docker run 创建并运行一个容器，-d 让容器在后台运行&lt;/p&gt;
 &lt;p&gt;&amp;ndash;name ：给容器起名字，必须唯一&lt;/p&gt;
 &lt;p&gt;-p xxxx:yyyy ：xxxx宿主机端口，yyyy容器内端口&lt;/p&gt;
@@ -259,9 +373,9 @@
     </item>
     <item>
       <title>计算机组成原理</title>
-      <link>http://localhost:1313/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</link>
+      <link>http://localhost:8877/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</link>
       <pubDate>Tue, 01 Oct 2024 22:48:26 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</guid>
+      <guid>http://localhost:8877/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</guid>
       <description>&lt;h1 id=&#34;第一章计算机系统概述&#34;&gt;第一章—计算机系统概述&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;MAR&lt;/strong&gt; 地址寄存器：用于寻址，位数对应存储单元的个数&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;MDR&lt;/strong&gt; 数据寄存器：位数和存储字长相等&lt;/p&gt;
@@ -269,9 +383,9 @@
     </item>
     <item>
       <title>操作系统</title>
-      <link>http://localhost:1313/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <link>http://localhost:8877/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Tue, 01 Oct 2024 22:48:12 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>http://localhost:8877/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
       <description>&lt;h1 id=&#34;第一章&#34;&gt;第一章&lt;/h1&gt;
 &lt;h2 id=&#34;基本概念&#34;&gt;基本概念&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;特权指令&lt;/strong&gt;：I/O 指令、置中断、存取用于内存保护的寄存器，送程序状态字到程序状态寄存器&lt;/p&gt;
@@ -279,9 +393,9 @@
     </item>
     <item>
       <title>数据结构</title>
-      <link>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <link>http://localhost:8877/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
       <pubDate>Tue, 01 Oct 2024 22:03:26 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <guid>http://localhost:8877/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
       <description>&lt;p&gt;顺序表主要特点是随机访问，存储密度高，逻辑相邻的元素物理结构上也相邻，插入删除需要移动大量的元素&lt;/p&gt;
 &lt;h1 id=&#34;队列&#34;&gt;队列&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;队列的存储结构&lt;/strong&gt;&lt;/p&gt;
@@ -296,9 +410,9 @@
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:8877/posts/my-first-post/</link>
       <pubDate>Sun, 22 Sep 2024 01:53:10 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:8877/posts/my-first-post/</guid>
       <description>&lt;p&gt;这是第一篇文章&lt;/p&gt;
 &lt;p&gt;行内数学公式：$ a^2 + b^2 = c^2 $。&lt;/p&gt;
 &lt;p&gt;块公式，&lt;/p&gt;
@@ -342,10 +456,11 @@ $$
     </item>
     <item>
       <title>关于</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:8877/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;这写一些关于的信息&lt;/p&gt;</description>
+      <guid>http://localhost:8877/about/</guid>
+      <description>&lt;p&gt;无人问津也好，技不如人也好罢，安静下来，去做自己该做的事，不骄不躁，大处着眼，小处着手&lt;/p&gt;
+&lt;p&gt;是非审之于己，毁誉听之于人，得失发之于数&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
